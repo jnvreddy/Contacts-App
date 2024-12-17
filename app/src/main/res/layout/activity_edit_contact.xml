@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- Profile Image -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/edit_profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/baseline_account_circle_24"
+        android:contentDescription="Profile Image"
+        android:clickable="true"
+        android:focusable="true"
+        app:shapeAppearanceOverlay="@style/CircularShape"/>
+
+    <!-- Name EditText -->
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:textColor="@color/black"
+        android:hint="Name"
+        android:inputType="text" />
+
+    <!-- Phone Number EditText -->
+    <EditText
+        android:id="@+id/phone_input"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:textColor="@color/black"
+        android:hint="Phone Number"
+        android:inputType="phone" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/save_button"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+</LinearLayout>
